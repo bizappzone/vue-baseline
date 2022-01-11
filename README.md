@@ -1,4 +1,4 @@
-# vue-baseline
+# sample3-vuex
 
 ## Project setup
 ```
