@@ -1,10 +1,10 @@
 <template>
   <!-- Sub Header links -->
   <div class="hidden md:flex items-center space-x-3">
-    <p class="profile">Logged on as: XXX XXX</p>
+    <!-- <p class="profile">Logged on as: XXX XXX</p>
     <router-link to="/" class="nav-second-active" aria-label="Profile"
       >Profile</router-link
-    >
+    > -->
     <router-link to="/" class="nav-second-active" aria-label="Account Settings"
       >Settings</router-link
     >
@@ -40,9 +40,9 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .nav-second-active {
-  @apply py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300;
+  @apply py-2 px-2 font-medium text-gray-500 rounded hover:bg-blue-400 hover:text-white transition duration-300;
 }
 .nav-basic {
-  @apply py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300;
+  @apply py-2 px-2 font-medium text-gray-500 rounded hover:bg-blue-400 hover:text-white transition duration-300;
 }
 </style>

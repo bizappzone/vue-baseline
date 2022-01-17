@@ -1,16 +1,19 @@
 <template>
-  <div class="about">
-    <h1>This is an assessment page</h1>
+  <div class="home">
+    <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
+    <PageTitle msg="Welcome to Assessment Page" />
   </div>
 </template>
+
 <script lang="ts">
 import { defineComponent } from "vue";
-// import MessageSection from "@/components/business-components/MessageSection.vue";
+import PageTitle from "@/components/sections/PageTitleSection.vue";
 
 export default defineComponent({
-  name: "AssessmentPage",
+  name: "AssesmentPage",
+  props: {},
   components: {
-    // MessageSection,
+    PageTitle,
   },
 });
 </script>
