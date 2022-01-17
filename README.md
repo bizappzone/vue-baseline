@@ -1,4 +1,4 @@
-# sample3-vuex
+# frontend
 
 ## Project setup
 ```

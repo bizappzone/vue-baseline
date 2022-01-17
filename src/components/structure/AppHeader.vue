@@ -16,7 +16,7 @@
           <div class="md:hidden flex items-center">
             <button class="outline-none mobile-menu-button">
               <svg
-                class="w-6 h-6 text-gray-500 hover:text-green-500"
+                class="w-6 h-6 text-gray-500 hover:text-blue-500"
                 x-show="!showMenu"
                 fill="none"
                 stroke-linecap="round"
@@ -35,31 +35,24 @@
       <div class="hidden mobile-menu">
         <ul class="">
           <li class="active">
-            <a
-              href="index.html"
-              class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold"
-              >Home</a
+            <router-link to="/" class="baz-mobile-link" aria-label="Home"
+              >Home</router-link
             >
           </li>
           <li>
-            <a
-              href="#services"
-              class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
-              >Services</a
+            <router-link
+              to="/assess"
+              class="baz-mobile-link"
+              aria-label="Assessments"
+              >Assessments</router-link
             >
           </li>
           <li>
-            <a
-              href="#about"
-              class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
-              >About</a
-            >
-          </li>
-          <li>
-            <a
-              href="#contact"
-              class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
-              >Contact Us</a
+            <router-link
+              to="/admin"
+              class="baz-mobile-link"
+              aria-label="Admin Login"
+              >Admin</router-link
             >
           </li>
         </ul>
@@ -90,6 +83,12 @@ export default defineComponent({
 </script>
 <style scoped>
 .baz-header {
-  @apply bg-green-400;
+  @apply bg-blue-400;
+}
+.baz-mobile-link {
+  @apply block text-sm px-2 py-4 hover:bg-blue-400 transition duration-300;
+}
+.baz-mobile-link:active {
+  @apply block text-sm px-2 py-4 text-white bg-blue-400 font-semibold;
 }
 </style>

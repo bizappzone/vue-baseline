@@ -9,7 +9,7 @@ exports.config = {
    * config for local testing
    */
   maxInstances: 1,
-  services: ['chromedriver'],
+  services: ['chromedriver', 'geckodriver'],
   capabilities: [
     {
       browserName: 'chrome',
@@ -20,5 +20,9 @@ exports.config = {
           : []
       }
     },
+    {
+      browserName: 'firefox',
+      acceptInsecureCerts: true
+    }
   ]
 }

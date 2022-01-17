@@ -6,8 +6,8 @@
 
         <div class="footer-links">footer</div>
         <div class="footer-ds">
-          <router-link to="/design" class="nav-basic" aria-label="Design"
-            >Design</router-link
+          <router-link to="/admin" class="nav-basic" aria-label="Admin system"
+            >Admin Login</router-link
           >
         </div>
       </div>
